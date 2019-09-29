@@ -13,12 +13,12 @@ class UnsupervisedRandomForest(BaseEstimator):
     """Unsupervised random(er) forest
 
     Supports both Random Forest, developed by Breiman (2001) [#Breiman]_, as well as
-    Randomer Forest or Random Projection Forests (RerF) developed by
+    Randomer Forest or Random Projection Forests (RerF)(also known as SPORF) developed by
     Tomita et al. (2016) [#Tomita]_.
 
     The difference between the two algorithms is where the random linear
     combinations occur: Random Forest combines features at the tree level
-    whereas RerF combines features at the node level.
+    whereas RerF (SPORF) combines features at the node level.
 
     In addition to the normal RandomForestClassifier parameters, there are
     two parameters to be aware of:
